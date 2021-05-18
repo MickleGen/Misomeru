@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="heb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- icon -->
+    <link rel="icon" href="../../../Visual/Full_logo.jpg" type="image/jpg" sizes="16x16">
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="../../../CSS&JS/index.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/lightbox.min.css"/>
+
+    <!-- script -->
+    <script src="../../../JS/index.js"></script>
+    <script src="JS/lightbox-plus-jquery.min.js"></script>
+
+    <title>Home Misomeru - sushi & stuff</title>
+
+</head>
+<body>
+  <button onclick="topFunction()" class="myBtn" id="myBtn" title="Go to top" >לפסגה</button>
+  <script src="../../../JS/button.js"></script>
+    <table>
+        <td>
+            <td><img class="logo" src="../../../Visual/logo_orig.jpg" onclick="window.location='../../../index.html'"></td>
+            <td><img class="NameLogo" src="../../../Visual/NameLogo.jpg"></td>
+            <td><img class="lor" src="../../../Visual/loremImg.jpg"></td></br>
+        </td>
+    </table>
+
+    <table class="mainer">
+        <td>
+          <a><input type="button" class="klaps" value="עלינו" onclick="window.location='../P2/index.html'"//></a>
+          <a><input type="button" class="klaps" value="תַפרִיט" onclick="window.location='../P3/index.html'"/></a>
+          <a><input type="button" class="klaps" value="גלריה" onclick="window.location='../P4/index.html'"/></a>
+          <a><input type="button" class="klaps" value="ביקורות" onclick="window.location='../Reviews/index.html'"/></a>
+          <a><input type="button" class="klaps" value="FAQ" onclick="window.location='../FAQ/index.html'"/></a>
+          <a><input type="button" class="klaps" value="לוח זמנים" onclick="window.location='../Map/index.html'"/></a>
+          <a><input type="button" class="klaps" value="קשר" onclick="window.location='../P5/index.html'"/> </a>
+        </td>
+    </table>
+
+    <table>
+      <td>
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+
+          <div class="slide first">
+            <img src="../../../Galery/H1.jpg">
+          </div>
+          <div class="slide">
+            <img src="../../../Galery/H2.jpg">
+          </div>
+          <div class="slide">
+            <img src="../../../Galery/H3.jpg">
+          </div>
+          <div class="slide">
+            <img src="../../../Galery/H4.jpg">
+          </div>
+
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+        </div>
+
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+      </div>
+    </td>
+    </table>
+
+    <table>
+      <th>
+      <div class="row">
+        <div class="column">
+          <img src="1.jpg" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="2.jpg" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="3.jpg" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="4.jpg" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="5.jpg" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="6.jpg" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="7.jpg" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="8.jpg" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="9.jpg" onclick="myFunction(this);">
+        </div>
+      </div>
+      </th>
+      <th>
+<!-- The expanding image container -->
+      <div class="container">
+  <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <!-- Expanded image -->
+        <img id="expandedImg" style="width:100%">
+  <!-- Image text -->
+        <div id="imgtext"></div>
+        <h1>תמונות נוספות <a href="https://www.instagram.com/misomeru_/">באינסטגרם</a> שלנו</h1>
+      </div>
+    </th>
+    </table>
+    <script src="galery.js"></script>
+    <img class="END" src="../../../Visual/end.png"></br>
+</body>
+</html>

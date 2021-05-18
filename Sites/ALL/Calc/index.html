@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="heb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- icon -->
+    <link rel="icon" href="../../../Visual/Full_logo.jpg" type="image/jpg" sizes="16x16">
+
+    <!-- style -->
+    <link href="../../../CSS&JS/index.css" rel="stylesheet"/>
+    <link href="invoice.css" rel="stylesheet"/>
+
+    <!-- script -->
+    <script src="inputOne.js"></script>
+
+    <title>Home Misomeru - sushi & stuff</title>
+
+</head>
+<body>
+    <table>
+        <td>
+            <td><img class="logo" src="../../../Visual/logo_orig.jpg" onclick="window.location='../../../index.html'"></td>
+            <td><img class="NameLogo" src="../../../Visual/NameLogo.jpg"></td>
+            <td><img class="lor" src="../../../Visual/loremImg.jpg"></td></br>
+        </td>
+    </table>
+    <table class="mainer">
+        <td>
+          <a><input type="button" class="klaps" value="עלינו" onclick="window.location='../P2/index.html'"/></a>
+          <a><input type="button" class="klaps" value="תַפרִיט" onclick="window.location='../P3/index.html'"/></a>
+          <a><input type="button" class="klaps" value="גלריה" onclick="window.location='../P4/index.html'"/></a>
+          <a><input type="button" class="klaps" value="ביקורות" onclick="window.location='../Reviews/index.html'"/></a>
+          <a><input type="button" class="klaps" value="FAQ" onclick="window.location='../FAQ/index.html'"/></a>
+          <a><input type="button" class="klaps" value="לוח זמנים" onclick="window.location='../Map/index.html'"/></a>
+          <a><input type="button" class="klaps" value="קשר" onclick="window.location='../P5/index.html'"/> </a>
+        </td>
+    </table>
+    <table>
+        <th>
+          <tr>
+            <th colspan="4">Rolls 🍣 רולם </th>
+          </tr>
+          <tr>
+            <th>&nbsp;שם&nbsp;</th>
+            <th>&nbsp;מכיר&nbsp;</th>
+            <th>&nbsp;כמות&nbsp;</th>
+            <th>&nbsp;סה"כ&nbsp;</th>
+          </tr>
+          <tr>
+            <td>&nbsp;O-Toko&nbsp;</td>
+            <td id="price1">&nbsp; 52 &#8362;&nbsp;</td>
+            <td><input id="amount1" placeholder="&nbsp;0" class="price" onblur="calc(1)" onfocus="changeBG(1)"/></td>
+            <td id="subTotal1">&nbsp;&#8362;0&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;AI NO KI 🔥&nbsp;</td>
+            <td id="price2">&nbsp; 49 &#8362;&nbsp;</td>
+            <td><input id="amount2" placeholder="&nbsp;0" class="price" onblur="calc(2)" onfocus="changeBG(2)" /></td>
+            <td id="subTotal2">&nbsp;&#8362;0&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;Futago&nbsp;</td>
+            <td id="price3">&nbsp; 50 &#8362;&nbsp;</td>
+            <td><input id="amount3" placeholder="&nbsp;0" class="price" onblur="calc(3)" onfocus="changeBG(3)" /></td>
+            <td  id="subTotal3">&nbsp;&#8362;0&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;Kawaii ♨&nbsp;</td>
+            <td id="price4">&nbsp; 50 &#8362;&nbsp;</td>
+            <td><input id="amount4" placeholder="&nbsp;0" class="price" onblur="calc(4)" onfocus="changeBG(4)" /></td>
+            <td  id="subTotal4">&nbsp;&#8362;0&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;Aka&nbsp;</td>
+            <td id="price5">&nbsp; 54 &#8362;&nbsp;</td>
+            <td><input id="amount5" placeholder="&nbsp;0" class="price" onblur="calc(5)" onfocus="changeBG(5)" /></td>
+            <td  id="subTotal5">&nbsp;&#8362;0&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;Taiyo roll&nbsp;</td>
+            <td id="price6">&nbsp; 58 &#8362;&nbsp;</td>
+            <td><input id="amount6" placeholder="&nbsp;0" class="price" onblur="calc(6)" onfocus="changeBG(6)" /></td>
+            <td  id="subTotal6">&nbsp;&#8362;0&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;Seinaru&nbsp;</td>
+            <td id="price7">&nbsp; 48 &#8362;&nbsp;</td>
+            <td><input id="amount7" placeholder="&nbsp;0" class="price" onblur="calc(7)" onfocus="changeBG(7)" /></td>
+            <td  id="subTotal7">&nbsp;&#8362;0&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;Arai&nbsp;</td>
+            <td id="price8">&nbsp; 49 &#8362;&nbsp;</td>
+            <td><input id="amount8" placeholder="&nbsp;0" class="price" onblur="calc(8)" onfocus="changeBG(8)" /></td>
+            <td  id="subTotal8">&nbsp;&#8362;0&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;Niji no iro&nbsp;</td>
+            <td id="price9">&nbsp; 62 &#8362;&nbsp;</td>
+            <td><input id="amount9" placeholder="&nbsp;0" class="price" onblur="calc(9)" onfocus="changeBG(9)" /></td>
+            <td  id="subTotal9">&nbsp;&#8362;0&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;Sumoku&nbsp;</td>
+            <td id="price10">&nbsp; 52 &#8362;&nbsp;</td>
+            <td><input id="amount10" placeholder="&nbsp;0" class="price" onblur="calc(10)" onfocus="changeBG(10)" /></td>
+            <td  id="subTotal10">&nbsp;&#8362;0&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2">&nbsp;</td>
+            <td>סה"כ</td>
+            <td id="total">&nbsp;&#8362;0</td>
+          </tr>
+          <tr>
+            <td colspan="2">&nbsp;</td>
+            <td>V.A.T</td>
+            <td id="vat">&nbsp;&#8362;0</td>
+          </tr>
+          <tr>
+            <td colspan="2">&nbsp;</td>
+            <td>משלוח</td>
+            <td id="ord">&nbsp;&#8362;0</td>
+          </tr>
+          <tr>
+            <td colspan="2">&nbsp;</td>
+            <td>לתשלום</td>
+            <td id="payment">&nbsp;&#8362;0</td>
+          </tr>
+          <tr>
+            <td>&nbsp;🔥 - ספייסי</td>
+          </tr>
+          <tr>
+            <td>&nbsp;♨ - מטוגן</td>
+          </tr>
+          <th colspan="4"><a href="../P3/index.html">חזרה לתפריט</th>
+        </th>
+    </table>
+    <img class="END" src="../../../Visual/end.png"></br>
+</body>
+</html>

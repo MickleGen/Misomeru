@@ -1,0 +1,16 @@
+.price
+{
+    /*color:steelblue;
+    background-color: lightgreen; */
+    border: 2px solid steelblue;
+    border-radius: 5px;
+}
+.price:focus{
+    /*color:white;
+     background-color: tomato; */ 
+    border: 2px solid red;
+    border-radius: 5px;
+}
+td{
+    border:none;
+}

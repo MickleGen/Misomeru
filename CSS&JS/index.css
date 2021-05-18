@@ -1,0 +1,290 @@
+body{
+    background-image: url("../Visual/back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #EFE7DA;
+    border: 5px solid black;
+}
+
+
+.logo{
+    background-color: #EFE7DA;
+    border: 5px solid black;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    alt: "Misomeru";
+}
+
+.NameLogo{
+    background-color: #EFE7DA;
+    border: 5px solid black;
+    width: 600px;
+    height: 100px;
+    alt: "Misomeru";
+}
+
+.lor{
+    background-color: #EFE7DA;
+    border: 5px solid black;
+    width: 100px;
+    height: 100px;
+    alt: "LoremImg";
+}
+
+.slider{
+  width: 800px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.manual-btn{
+  border: 2px solid #EFE7DA;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: black;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div{
+  border: 2px solid #E8322E;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #E8322E;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #E8322E;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #E8322E;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #E8322E;
+}
+
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+
+.mainer{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #EFE7DA;
+  border: 5px solid black;
+  width: 800px;
+  height: 50px;
+  text-align: right;
+}
+
+.origin{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #EFE7DA;
+    border: 5px solid black;
+    width: 800px;
+    height: 236px;
+}
+
+.origin_rev{
+    background-color: #EFE7DA;
+    border: 5px solid black;
+    width: 800px;
+    height: 236px;
+}
+
+.klaps{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #EFE7DA;
+    color: black;
+    width: 108px;
+    height: 50px;
+    cursor: pointer;
+
+}
+
+.klaps:hover{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E8322E;
+    color: black;
+    width: 108px;
+    height: 50px;
+}
+
+.END{
+    background-color: #EFE7DA;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
+    width: 600px;
+    height: 50px;
+}
+
+.ENDname{
+    background-color: #EFE7DA;
+    border: 5px solid black;
+    width: 100px;
+    height: 50px;
+    alt: "LoremImg";
+}
+
+.calendar{
+  width: 300px;
+  height: auto;
+  background: #EFE7DA;
+  box-sizing: border-box;
+}
+
+.calendar .date {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+  grid-gap: 10px;
+}
+
+.calendar .date div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+}
+
+.calendar .date div.day:first-child,
+.calendar .date div.number:nth-child(7n + 1)
+{
+  color: #E8322E
+}
+
+.calendar .date div.number.active{
+  background: black;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.column{
+  margin: 10px 50px;
+}
+
+.column img{
+  float: left;
+  margin: 10px 25px;
+  width: 25%;
+  transition: 1s;
+}
+
+.column img:hover{
+  transform: scale(1.15);
+}
+
+.container {
+  position: relative;
+  display: none;
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 20px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: 5px solid black; /* Remove borders */
+  background-color: #EFE7DA; /* Set a background color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  font-size: 18px; /* Increase font size */
+}
+
+.myBtn:hover {
+  background-color: #E8322E; /* Add a dark-grey background on hover */
+}
